@@ -31,14 +31,21 @@ vectorPalabraFinal=[]
 
 for i in range(len(palabra)): 
     llenar2=palabra[i]
-    print(llenar2)
     for j in range(len(letras)):
         if(letras[j]==llenar2):
-            print("Si")
+            llenar2=j
+    vectorPalabraFinal.append(llenar2)
+
+print("en forma de vector el nuevo código= ",vectorPalabraFinal)
+
+vectorPalabraFinal2="".join([str(_) for _ in vectorPalabraFinal])
+
+print(vectorPalabraFinal2)
         
 
-            
-    
+#convertir vector a palabra
+#strLista="".join(lista)
+#print(strLista)
         
 
 
